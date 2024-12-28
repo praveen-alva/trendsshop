@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends Shop</title>
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            color: #007bff;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .black a {
+            color: yellow;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .black a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .center {
+            background-image: url("bg.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .center h2 {
+            font-size: 2rem;
+        }
+
+        .center h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+        }
+
+        .center p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .center button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: yellow;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .center button:hover {
+            background-color: orange;
+        }
+
+        .coll {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .coll div {
+            background-size: cover;
+            background-position: center;
+            width: 30%;
+            height: 300px;
+            position: relative;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+
+        .men { background-image: url("https://www.instaloverz.com/wp-content/uploads/2017/03/18.-Men-Summer-Fashion-Style.jpg");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+             
+     }
+        .women { background-image: url("18-edgy-womens-fashion.webp"); }
+        .bab { background-image: url("c88db6f3e3b6e6f820411c562380b786.jpg"); }
+
+        .coll h5 {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        /* Colors Display Section */
+        .colors-container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .colors-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .color-item {
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 6px;
+            background-color: #f8f9fa;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .color-item:hover {
+            background-color: #007bff;
+            color: white;
+        }
+      
+            /* General Reset */
+            body, html {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                box-sizing: border-box;
+            }
+        
+            /* Header Styling */
+            .header {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #f8f9fa;
+                padding: 10px 20px;
+                flex-wrap: wrap;
+            }
+        
+            .header a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+        
+            .header a:hover {
+                color: #007bff;
+            }
+        
+            .black {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+        
+            .black a {
+                color: yellow;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+        
+            .black a:hover {
+                text-decoration: underline;
+            }
+        
+            /* Hero Section */
+            .center {
+                background-image: url("bg.jpg");
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+        
+            .center h2 {
+                font-size: 2rem;
+            }
+        
+            .center h1 {
+                font-size: 3rem;
+                margin: 10px 0;
+            }
+        
+            .center p {
+                font-size: 1.2rem;
+                margin: 10px 0;
+            }
+        
+            .center button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                background-color: yellow;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        
+            .center button:hover {
+                background-color: orange;
+            }
+        
+            .coll {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+        
+            .coll div {
+                background-size: cover;
+                background-position: center;
+                width: 30%;
+                height: 300px;
+                position: relative;
+                text-align: center;
+                color: white;
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
+        
+            .coll h5 {
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 10px;
+                border-radius: 8px;
+            }
+        
+            /* Colors Display Section */
+            .colors-container {
+                padding: 20px;
+                text-align: center;
+            }
+        
+            .colors-list {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        
+            .color-item {
+                padding: 10px 20px;
+                border: 2px solid black;
+                border-radius: 6px;
+                background-color: #f8f9fa;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        
+            .color-item:hover {
+                background-color: #007bff;
+                color: white;
+            }
+        
+            /* Responsive Styles */
+            @media (max-width: 768px) {
+                .header {
+                    flex-direction: column;
+                }
+        
+                .center h1 {
+                    font-size: 2.5rem;
+                }
+        
+                .center h2 {
+                    font-size: 1.5rem;
+                }
+        
+                .center p {
+                    font-size: 1rem;
+                }
+        
+                .coll div {
+                    width: 80%;
+                }
+            }
+            .logo {
+                position: relative;
+                right: 40%;
+            }
+            .header1 {
+                display: ;
+            }
+        
+            @media (max-width: 480px) {
+                .center h1 {
+                    font-size: 2rem;
+                }
+        
+                .center h2 {
+                    font-size: 1.2rem;
+                }
+        
+                .center p {
+                    font-size: 0.9rem;
+                }
+        
+                .coll div {
+                    width: 100%;
+                }
+        
+                .coll {
+                    flex-direction: column;
+                    align-items: center;
+                }
+        
+                .header {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+            /* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .logo {
+        position: relative;
+        left: 5px;
+       
+    }
+}
+/* General Footer Styling */
+.footer {
+    background-color: black;
+    overflow: hidden;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.get {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.para {
+    margin-left: 0px;
+    margin: 30px;
+    padding-bottom: -100px;
+    font-size: 1.1rem; /* Adjust text size for smaller screens */
+}
+
+h2 {
+    margin: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.mail {
+    margin-bottom: 90px;
+}
+
+i {
+    font-size: 80px;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+ul {
+    position: relative;
+    left: 30px;
+    font-size: 1.1rem; /* Adjust list item font size for better readability */
+}
+
+.query {
+    position: relative;
+    left: 0; /* Adjusted for better alignment on smaller screens */
+    margin: 0 auto;
+    bottom: 20%; /* Adjust for better spacing */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%; /* Make the form elements fit smaller screens */
+    max-width: 600px; /* Limit form width */
+}
+
+.check {
+    margin-left: -130px;
+}
+
+input, textarea {
+    height: 30px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 150px;
+}
+
+h3 {
+    margin: 30px;
+    font-size: 2rem;
+}
+
+button {
+    height: 40px;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+label {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Responsive Design for Mobile and Tablets */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get1 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .query {
+        position: relative;
+        left: 0;
+        bottom: 10%;
+        width: 90%; /* Make form input areas full width on smaller screens */
+        max-width: 500px; /* Limit form size */
+        margin-bottom: 30px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .para {
+        font-size: 1rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .copy {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+/* Further adjustments for very small screens (below 480px) */
+@media (max-width: 480px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .query {
+        width: 90%;
+        bottom: 5%;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    .copy {
+        padding-right: 0;
+        text-align: center;
+    }
+    .mine {
+        position: relative;
+        right:50px;
+
+    }
+    .check {
+        position: relative;
+        left:60px;
+
+    }
+}
+
+
+       
+        
+    </style>
+</head>
+<body>
+    
+    <div class="header1">
+        <div class="logo">
+            <img src="logo-removebg-preview.png" height="90vh">
+        </div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="sub.html">Men</a>
+            <a href="woman.html">Women</a>
+            <a href="#">Baby Collections</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+            <a href="#footer">Contact</a>
+            <a href="#" id="#search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+            </a>
+        </nav>
+        <div class="menu-toggle" id="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    
+
+    <div class="black">
+        <p>Sale up to 50%! Biggest Discounts. Limited Offer! <a href="#">Shop Now</a></p>
+    </div>
+
+    <div class="center">
+        <h2>Fashion Sales</h2>
+        <h1>Minimal Men's Style</h1>
+        <p>Discover the latest trends in men's fashion. Exclusive discounts available for a limited time.</p>
+        <a href="#search"><button>Shop Now</button></a>
+    </div>
+
+    <div class="coll">
+        <div class="men" onclick="showColors('men')">
+            <h5>Men's Fashion</h5>
+        </div>
+        <div class="women" onclick="showColors('women')">
+            <h5>Women's Fashion</h5>
+        </div>
+        <div class="bab" onclick="showColors('baby')">
+            <h5>Baby Fashion</h5>
+        </div>
+    </div>
+
+    <div class="colors-container" id="colorsContainer">
+        <h3 id="colorsTitle"></h3>
+        <div class="colors-list" id="colorsList"></div>
+    </div>
+
+    <div class="headline">
+        <footer class="footer" id="footer">
+            <div class="get">
+                <div class="get1">
+                    <h1 class="head1">Get In Touch</h1>
+                    <h2>DON'T BE SHY</h2>
+                    <p class="para">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <i class='bx bx-envelope bx-flip-vertical bx-flashing' style='color:rgba(242,233,9,0.99)' id="mail"></i>
+                    <div class="mine">
+                        <ul>Mail Me</ul>
+                        <ul>praveenalva83@gmail.com</ul>
+                        <i class='bx bxs-phone bx-flip-vertical bx-flashing' style='color:rgba(242,233,9,0.99)' id="phone"></i>
+                        <ul>Call Me</ul>
+                        <ul>+918374072244</ul>
+                    </div>
+                    
+                    <div class="query">
+                            <div class="text">
+                                <input type="text" placeholder="Enter your Name" id="name"><br><br>
+                                <input type="text" placeholder="Enter a valid email address" id="email"><br><br>
+                            </div>
+                            <textarea placeholder="Enter your message" id="message"></textarea><br><br>
+                            <input type="checkbox" id="accept-terms" name="terms" value="accepted" class="check"><br><br>
+                            <label for="accept-terms" class="terms">I accept the Terms and Services</label><br><br>
+                            <button type="submit" id="btn" onclick="validateForm()">Submit</button>  
+                    </div>
+                </div>
+                <div class="copy">
+                  <h6 class="copy">©All Rights Reserved 2024 , CSE Avengers❣️</h6>
+               </div>
+            </div>   
+        </footer>
+    </div>
+
+    <script>
+        const mobileMenu = document.getElementById("mobileMenu");
+        const navbar = document.querySelector(".navbar");
+
+        mobileMenu.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        });
+
+        const colorsData = {
+            men: {
+                title: "Available Colors for Men's Fashion",
+                items: ["Red Shirt", "Blue Shirt", "Black Pants", "Gray Pants"]
+            },
+            women: {
+                title: "Available Colors for Women's Fashion",
+                items: ["Pink Chudars", "Blue Tops", "Green Tops", "Yellow Chudars"]
+            },
+            baby: {
+                title: "Available Colors for Baby Fashion",
+                items: ["Red T-Shirts", "Blue Shorts", "Green T-Shirts", "Yellow Shorts"]
+            }
+        };
+
+        function showColors(category) {
+            const container = document.getElementById("colorsContainer");
+            const title = document.getElementById("colorsTitle");
+            const list = document.getElementById("colorsList");
+
+            title.textContent = colorsData[category].title;
+            list.innerHTML = "";
+
+            colorsData[category].items.forEach(color => {
+                const colorItem = document.createElement("div");
+                colorItem.className = "color-item";
+                colorItem.textContent = color;
+                list.appendChild(colorItem);
+            });
+
+            container.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>

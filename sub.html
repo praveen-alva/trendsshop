@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .men-cloth {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .men-s {
+            padding: 20px;
+            border: 1px solid black;
+            text-align: center;
+            width: 300px;
+            background-color: #f4f4f4;
+        }
+
+        .men-s img {
+            width: 100%;
+            height: auto;
+        }
+
+        .men-s h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .men-s button {
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 6px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .add-cart {
+            background-color: greenyellow;
+        }
+
+        .buy-now {
+            background-color: yellow;
+        }
+
+        .response {
+            margin-top: 15px;
+            font-size: 16px;
+            color: green;
+            font-weight: bold;
+        }
+
+        .error {
+            margin-top: 15px;
+            font-size: 16px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Media Queries for Mobile and Tablet */
+        @media only screen and (max-width: 768px) {
+            .men-cloth {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .men-s {
+                width: 90%;
+            }
+
+            .men-s h3 {
+                font-size: 16px;
+            }
+
+            .men-s button {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .response, .error {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .men-s {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .men-s h3 {
+                font-size: 14px;
+            }
+
+            .men-s button {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            .response, .error {
+                font-size: 12px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="men-cloth">
+        <div class="men-s">
+            <img src="71I-cik1CyL._AC_UL1500_.jpg" alt="men_shirt" width="300" height="350">
+            <h3>cotton men shirt</h3>
+            <b style="font-size: 25px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                    <path d="M17 6V4H6v2h3.5c1.302 0 2.401.838 2.815 2H6v2h6.315A2.994 2.994 0 0 1 9.5 12H6v2.414L11.586 20h2.828l-6-6H9.5a5.007 5.007 0 0 0 4.898-4H17V8h-2.602a4.933 4.933 0 0 0-.924-2H17z"></path>
+                </svg> 250</b><br>
+            <button class="add-cart" style="background-color: greenyellow;">Add cart</button>
+            <button class="buy-now">Buy</button>
+            <div class="response" id="response1"></div>
+        </div>
+        <div class="men-s">
+            <img src="./Arro-Pant-Cobalt-Moon.avif" alt="men_shirt" width="300" height="350">
+            <h3>cotton men shirt</h3>
+            <b style="font-size: 25px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                    <path d="M17 6V4H6v2h3.5c1.302 0 2.401.838 2.815 2H6v2h6.315A2.994 2.994 0 0 1 9.5 12H6v2.414L11.586 20h2.828l-6-6H9.5a5.007 5.007 0 0 0 4.898-4H17V8h-2.602a4.933 4.933 0 0 0-.924-2H17z"></path>
+                </svg> 250</b><br>
+            <button class="add-cart" style="background-color: greenyellow;">Add cart</button>
+            <button class="buy-now">Buy</button>
+            <div class="response" id="response2"></div>
+        </div>
+        <div class="men-s">
+            <img src="./OIP.jpeg" alt="men_shirt" width="300" height="350">
+            <h3>cotton men shirt</h3>
+            <b style="font-size: 25px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                    <path d="M17 6V4H6v2h3.5c1.302 0 2.401.838 2.815 2H6v2h6.315A2.994 2.994 0 0 1 9.5 12H6v2.414L11.586 20h2.828l-6-6H9.5a5.007 5.007 0 0 0 4.898-4H17V8h-2.602a4.933 4.933 0 0 0-.924-2H17z"></path>
+                </svg> 250</b><br>
+            <button class="add-cart" style="background-color: greenyellow;">Add cart</button>
+            <button class="buy-now">Buy</button>
+            <div class="response" id="response3"></div>
+        </div>
+        <div class="men-s">
+            <img src="./shopyholik-men-shorts-latest-new-combo-pack-of-3-product-images-rvu1eaymwc-0-202208261222.webp" alt="men_shirt" width="300" height="350">
+            <h3>cotton men shirt</h3>
+            <b style="font-size: 25px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                    <path d="M17 6V4H6v2h3.5c1.302 0 2.401.838 2.815 2H6v2h6.315A2.994 2.994 0 0 1 9.5 12H6v2.414L11.586 20h2.828l-6-6H9.5a5.007 5.007 0 0 0 4.898-4H17V8h-2.602a4.933 4.933 0 0 0-.924-2H17z"></path>
+                </svg> 250</b><br>
+            <button class="add-cart" style="background-color: greenyellow;">Add cart</button>
+            <button class="buy-now">Buy</button>
+            <div class="response" id="response4"></div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.buy-now').forEach((button, index) => {
+            button.addEventListener('click', () => {
+                document.getElementById(`response${index + 1}`).textContent = 'Order successfully placed!';
+                document.getElementById(`response${index + 1}`).style.color = 'green';
+            });
+        });
+
+        document.querySelectorAll('.add-cart').forEach((button, index) => {
+            button.addEventListener('click', () => {
+                document.getElementById(`response${index + 1}`).textContent = 'Item added to cart!';
+                document.getElementById(`response${index + 1}`).style.color = 'blue';
+            });
+        });
+    </script>
+</body>
+
+</html>
